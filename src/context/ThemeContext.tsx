@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 
 interface ThemeContext {
-  handleToggleDark: () => void
+  handleToggleTheme: () => void
   dark: boolean
 }
 
@@ -15,7 +15,7 @@ export const ThemeContextProvider = ({ children }: ThemeContextProvider) => {
   const [theme, setTheme] = useState<string | null>(null)
   const [dark, setDark] = useState(false)
 
-  const handleToggleDark = () => setTheme(theme === 'dark' ? 'light' : 'dark')
+  const handleToggleTheme = () => setTheme(theme === 'dark' ? 'light' : 'dark')
 
   useEffect(() => {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -36,7 +36,7 @@ export const ThemeContextProvider = ({ children }: ThemeContextProvider) => {
   }, [theme])
 
   const value = {
-    handleToggleDark,
+    handleToggleTheme,
     dark
   }
 

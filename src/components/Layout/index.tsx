@@ -17,7 +17,11 @@ export const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
       <footer className='bg-neutral-900 dark:bg-zinc-900 border-t border-slate-50/10 flex gap-2 justify-center items-center p-6 text-slate-200 font-semibold text-lg'>
-        <a href='#' className='flex gap-2 flex-col md:flex-row items-center'>
+        <a
+          href='https://github.com/joaquinns/cohere-node-ia-fixMyEnglish'
+          target='_blank'
+          className='flex gap-2 flex-col md:flex-row items-center'
+        >
           <AiFillGithub size='2rem' />
           Github Repo
         </a>

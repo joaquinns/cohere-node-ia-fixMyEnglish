@@ -13,12 +13,6 @@ function App() {
         <h3 className='text-xl lg:text-4xl text-center my-6 text-neutral-900 dark:text-slate-300'>
           This app was created for the Hackaton 2023 of midudev!
         </h3>
-        <a
-          href=''
-          className='flex justify-center items-center font-semibold text-md mb-8'
-        >
-          Hackaton 2023 from midudev
-        </a>
 
         <Pulse />
         <FixSection />

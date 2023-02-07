@@ -1,3 +1,4 @@
+import { BiMoon, BiSun } from 'react-icons/bi'
 import { useTheme } from '../../context/ThemeContext'
 
 export const Header = () => {
@@ -11,9 +12,9 @@ export const Header = () => {
           <button
             onClick={handleToggleTheme}
             className='p-2 bg-violet-700 hover:bg-violet-900 dark:bg-blue-400
-               dark:hover:bg-blue-500 rounded-md ease duration-150'
+               dark:hover:bg-blue-500 rounded-md ease duration-150 text-slate-100'
           >
-            {dark ? <h1>DALK :D</h1> : <h1>LIGHT :D</h1>}
+            {dark ? <BiSun size='2rem' /> : <BiMoon size='2rem' />}
           </button>
         </div>
       </nav>
